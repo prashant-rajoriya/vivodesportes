@@ -1,0 +1,63 @@
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>Admin:Tournaments</title>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <style type="text/css">
+  .form{
+  	width: 500px;
+  	padding: 30px;
+  }
+  input{
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="ui left inverted  vertical menu sidebar visible">
+  <a class="item" href="http://www,vivodesportes.com"> Vivo Desportes</a>
+  <a class="item" href="admin.html"> Statistics</a>
+  <a class="item" href="player.html"> Players </a>
+  <a class="item" href="blog_admin.html"> Blog </a>
+  <a class="item" href="aboutus_admin.html"> About Us</a>
+  <a class="item" href="videos_admin.html">Videos</a>
+  <a class="item active" href="tourn.html"><i class="soccer icon"></i> Tournaments </a>
+  </div>
+<div class="pusher">
+  <div class="pusher">
+    <div class="ui icon message">
+      <i class="soccer icon"></i>
+      <div class="content">
+        <div class="header"><h3>Add Tournaments</h3></div>
+      </div>
+    </div>
+<form class="ui form" action="/api/admin/tournaments" method="post" enctype="multipart/form-data">
+	<div><div class="ui horizontal label">Name</div><input type="text" placeholder="Name" name="name" ></div>
+	<div class="field">
+		<label class="ui teal tag label">Description</label>
+		<textarea rows="2" name="description"></textarea>
+	</div>
+	<div><div class="ui horizontal label">Location</div><input type="text" placeholder="location" name="location"></div>
+	<div><div class="ui horizontal label">Type</div><input type="text" placeholder="format" name="type"></div>
+  <div><div class="ui horizontal label">Status</div><input type="text" placeholder="status" name="status"></div>
+  <div class="field">
+    <label class="ui teal tag label">Feature</label>
+    <textarea rows="2" name="feature"></textarea>
+  </div>
+  <div class="field">
+    <label class="ui red tag label">Rules</label>
+    <textarea rows="2" name="rules"></textarea>
+  </div>
+  <div><div class="ui black tag label">Fiture image link</div><input type="file" name="fix"></div>
+  <div><div class="ui black tag label">Banner image link</div><input type="file" name="banner"></div>
+	<div><div class="ui horizontal label">Tournament Date</div><input type="date" placeholder="Tournament date" name="date"></div>
+	<div><div class="ui horizontal label">Last Registration Date</div><input type="date" placeholder="Last Reg date" name="closedate"></div>
+	<div><input type="submit" class="ui blue button" value="create"></div>
+</form>
+
+</div>
+</body>
+</html>

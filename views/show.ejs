@@ -1,0 +1,156 @@
+
+
+<script type="text/javascript" src="/../js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="/../js/materialize.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="../../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+<!-- Include Bootstrap Css -->
+<link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
+<!-- Include Bootstrap Min Css -->
+<link rel="stylesheet" href="/../assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/../assets/css/style.css">
+
+   <!-- Include Bootstrap Css -->
+   <link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
+   <!-- Include Bootstrap Min Css -->
+   <link rel="stylesheet" href="/../assets/css/bootstrap-theme.min.css">
+   <link rel="stylesheet" href="/../assets/css/style.css">
+   <link rel="stylesheet" href="/../assets/css/animate.min.css">
+   <link href ="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Header -->
+
+<style>
+#dubit{
+  background-color:black;  
+  }
+  </style>
+<ul id="userdropdown" class="dropdown-content">
+<div id = "toastArea" class="center"></div>
+  <li><a href="DisplayProfile.html">My Profile</a></li>
+  <li id = "logout"><a href="/api/logout">Log out</a></li>
+</ul>
+<nav class="indigo" role="navigation" id = "header">
+<div class="nav-wrapper">
+      <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down" style="margin-left:2%;margin-top:20px;">
+          <li id="pagenavbtn"><a href="/../html/Players.html">Players</a></li>
+          <li id="pagenavbtn"><a href="/../html/Tournaments.html">Tournaments</a></li>
+          <li id="pagenavbtn"><a href="/../html/Videos.html">Videos</a></li>
+          <li id="pagenavbtn"><a href="/../html/About.html">About</a></li>
+          <li id="pagenavbtn"><a href="/../html/Careers.html">Careers</a></li>
+          <li id="pagenavbtn"><a href="/../html/advertising.html">Advertising</a></li>
+          <li id="pagenavbtn"><a href="/blog" target="_self">Blog</a></li>
+      </ul>
+      <ul id="mobile-nav" class="side-nav">
+        <li><div id = "user-check1"> <a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="userdropdown" id="user-drop">Hey <span id="display-name1"></span><i class="material-icons right">arrow_drop_down</i></a></div></li>
+        <li><a href="/../html/Players.html">Player Profiles</a></li>
+        <li><a href="/../html/Tournaments.html">Tournaments</a></li>
+        <li><a href="/../html/Videos.html">Videos</a></li>
+        <li><a href="/../html/About.html">About</a></li>
+        <li><a href="/../html/Careers.html">Careers</a></li>
+        <li><a href="/../html/advertising.html">Advertising</a></li>
+        <li><a href="/blog" target="_self">Blog</a></li>
+        <span id = "visitor1"><li><a href="/../html/login.html" id="loginbutton">Login</a></li>
+        <li><a href="/../html/Register.html" id="registerbutton">Sign Up</a></li> </span>
+      </ul>
+      <a href="/../index.html"><img class="center responsive" id="logoimage" src="../../images/VivoDl.png" style="margin-left:3%;"></img></a>
+      <ul class="right hide-on-med-and-down" style="margin-top:20px;">
+          <li><div id = "user-check"> <a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="userdropdown" id="user-drop">Hey <span id="display-name"></span><i class="material-icons right">arrow_drop_down</i></a></div></li>
+          <span id = "visitor"><li><a class="btn-flat btn-small" href="/../html/login.html" id="loginbutton">Login</a></li>
+          <li><a class="btn-flat btn-small " href="/../html/Register.html" id="registerbutton">Sign Up</a></li> </span>
+      </ul>
+</div>
+</nav>
+<!-- Body -->
+    <p style="margin-left:100px;text-align:left;">Posted in <%= post.category%>  by <%= post.author%> on <%= moment(post.date).format(" MM-DD-YYYY")%></p>
+
+    <h1 style="text-align:center;"><a href='/blog/show/<%= post._id %>'><%=post.title%></a></h1>
+   <div class="image-placeholer" style="margin-left:350px;margin-right:350px;margin-bottom:30px;">
+    <img class="materialboxed" src='/image/uploads/blogs/<%= post.mainimage%>'>
+  </div>
+    <div id="body1"  style="text-align:center;" ><%- post.body%></div>
+    <br>
+    <hr>
+    <% if(comments){%>
+        <ul style="margin-left:100px;margin-right:100px;">
+            <% comments.forEach(function(comment) { %>
+                    <p><%= comment.name%></p>
+                    <p style="border:1px solid black;padding:15px;margin-bottom:50px;"><%- comment.body%></p>
+            <% });%>
+         </ul>
+    <%}%>
+
+
+<div class="formpost" style="margin-left:100px;margin-right:100px;">
+    <h3>Add Comments</h3>
+
+    <form method="post" action="/blog/addcomment" class="comment-form">
+        <input name="postid" type="hidden" value='<%= post._id%>'/>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label>Body</label>
+            <textarea name="body" id="body" class="form-control"></textarea>
+        </div><br/>
+        <input id="dubit"name="submit" type="submit" value="Add Comment" class="btn btn-default"/>
+    </form>
+  </div>
+    <footer id="colophon" class="footer site-footer" role="contentinfo" style="width:100%;" >
+
+
+             <div class="footer-bottom" style="height:150px;">
+               <div class="item wow animated fadeInRight" style="height:100px;" data-wow-delay=".35s">
+                 <div class="container">
+
+                  <ul style="font-size:medium;text-align:center;">
+                      <li class ='active'><a href="/">Home</a></li>&nbsp;|&nbsp;
+                      <li><a href="/html/advertising.html">Advertising</a></li>&nbsp;|&nbsp;
+                      <li><a href="/blog">Blog</a></li>&nbsp;|&nbsp;
+                      <li><a href="/html/About.html">About Us</a></li>&nbsp;
+                  </ul>
+                 </div>
+                 <div style="text-align:center;color:#7C7C7C"> copyright@vivodesportes2016</div>
+
+
+                 <div class="vdContact">
+                 <div><h6>Contact</h6></div>
+                 <div><i class="fa fa-envelope fa-2x"  aria-hidden="true"></i> &nbsp <a href = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=hrvivodesportes@gmail.com">hrvivodesportes@gmail.com</a></div>
+                 <div><i class="fa fa-phone fa-2x"  aria-hidden="true"></i>&nbsp +91 8141436399</div>
+
+
+
+
+                 </div>
+                  <div class="vdSocial">
+                    <div class="vds"><a href="https://www.facebook.com/vivo.desportes/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
+                    <div class="vds"><a href="https://twitter.com/VivoDesportes" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
+                </div>
+
+             </div>
+
+
+
+  </footer>
+
+    <script type="text/javascript" src="../../js/jquery-2.2.2.min.js"></script>
+    <!-- <script type="text/javascript" src="../../js/header.js"></script> -->
+   <script type="text/javascript" src="../../js/loginCheck.js"></script>
+    <!--<script src="/ckeditor/ckeditor.js"></script>-->
+    <!--<script>CKEDITOR.replace('body');</script>-->
+    <!--<script>-->
+<!--//        $(document).ready(function (){-->s
+<!--//            var myConcept = document.getElementById('body1').innerHTML;-->
+<!--//            myConcept="";-->
+<!--//            myConcept+= $(myConcept).text();-->
+<!--//        });-->
+<!--//-->
+    <!--</script>-->

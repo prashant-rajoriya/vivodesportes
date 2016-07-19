@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <!-- Include Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <!-- Include Bootstrap Min Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+
+
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      <link href="../css/stars.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <style>
+
+
+            .skillbar {
+                position:relative;
+                display:block;
+                margin-bottom:15px;
+                width:100%;
+                background:#eee;
+                height:35px;
+                border-radius:3px;
+                -moz-border-radius:3px;
+                -webkit-border-radius:3px;
+                -webkit-transition:0.4s linear;
+                -moz-transition:0.4s linear;
+                -ms-transition:0.4s linear;
+                -o-transition:0.4s linear;
+                transition:0.4s linear;
+                -webkit-transition-property:width, background-color;
+                -moz-transition-property:width, background-color;
+                -ms-transition-property:width, background-color;
+                -o-transition-property:width, background-color;
+                transition-property:width, background-color;
+            }
+
+            .skillbar-title {
+                position:absolute;
+                top:0;
+                left:0;
+                font-weight:bold;
+                font-size:13px;
+                color:#fff;
+                background:#6adcfa;
+                -webkit-border-top-left-radius:3px;
+                -webkit-border-bottom-left-radius:4px;
+                -moz-border-radius-topleft:3px;
+                -moz-border-radius-bottomleft:3px;
+                border-top-left-radius:3px;
+                border-bottom-left-radius:3px;
+            }
+
+            .skillbar-title span {
+                display:block;
+                background:rgba(0, 0, 0, 0.1);
+                padding:0 20px;
+                height:35px;
+                line-height:35px;
+                -webkit-border-top-left-radius:3px;
+                -webkit-border-bottom-left-radius:3px;
+                -moz-border-radius-topleft:3px;
+                -moz-border-radius-bottomleft:3px;
+                border-top-left-radius:3px;
+                border-bottom-left-radius:3px;
+            }
+
+            .skillbar-bar {
+                height:35px;
+                width:0px;
+                background:#6adcfa;
+                border-radius:3px;
+                -moz-border-radius:3px;
+                -webkit-border-radius:3px;
+            }
+
+            .skill-bar-percent {
+                position:absolute;
+                right:10px;
+                top:0;
+                font-size:11px;
+                height:35px;
+                line-height:35px;
+                color:#444;
+                color:rgba(0, 0, 0, 0.4);
+            }
+        </style>
+
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+    <!-- <div id="nameheader"></div> -->
+
+     <ul id="userdropdown" class="dropdown-content">
+      <li><a href="DisplayProfile.html">My Profile</a></li>
+      <li id = "logout"><a href="/api/logout">Log out</a></li>
+    </ul>
+    <div id="nameheader"></div>
+    <nav class="indigo" role="navigation" id = "header">
+    <div class="nav-wrapper">
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down" style="margin-left:2%;margin-top:20px;">
+              <li id="pagenavbtn"><a href="/../html/Players.html">Players</a></li>
+              <li id="pagenavbtn"><a href="/../html/Tournaments.html">Tournaments</a></li>
+              <li id="pagenavbtn"><a href="/../html/Videos.html">Videos</a></li>
+              <li id="pagenavbtn"><a href="/../html/About.html">About</a></li>
+              <li id="pagenavbtn"><a href="/../html/Careers.html">Careers</a></li>
+                <li id="pagenavbtn"><a href="/../html/advertising.html">Advertising</a></li>
+              <li id="pagenavbtn"><a href="/blog" target="_self">Blog</a></li>
+          </ul>
+          <ul id="mobile-nav" class="side-nav">
+            <li><div id = "user-check1"> <a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="userdropdown" id="user-drop">Hey <span id="display-name1"></span><i class="material-icons right">arrow_drop_down</i></a></div></li>
+            <li><a href="/../html/Players.html">Player Profiles</a></li>
+            <li><a href="/../html/Tournaments.html">Tournaments</a></li>
+            <li><a href="/../html/Videos.html">Videos</a></li>
+            <li><a href="/../html/About.html">About</a></li>
+            <li><a href="/../html/Careers.html">Careers</a></li>
+            <li><a href="/blog" target="_self">Blog</a></li>
+            <li id="pagenavbtn"><a href="/../html/advertising.html">Advertising</a></li>
+            <span id = "visitor1"><li><a href="/../html/login.html" id="loginbutton">Login</a></li>
+            <li><a href="/../html/Register.html" id="registerbutton">Sign Up</a></li> </span>
+          </ul>
+          <a href="/../index.html"><img class="center responsive" id="logoimage" src="../images/VivoDl.png" style="margin-left:3%;"></img></a>
+          <ul class="right hide-on-med-and-down" style="margin-top:20px;">
+              <li><div id = "user-check"> <a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="userdropdown" id="user-drop">Hey <span id="display-name"></span><i class="material-icons right">arrow_drop_down</i></a></div></li>
+              <span id = "visitor"><li><a class="btn-flat btn-small" href="/../html/login.html" id="loginbutton">Login</a></li>
+              <li><a class="btn-flat btn-small " href="/../html/Register.html" id="registerbutton">Sign Up</a></li> </span>
+          </ul>
+  </div>
+  </nav>
+  <nav class="indigo grey" style="height:50px;">
+    <!-- <div class="nav-wrapper"> -->
+    <div id="search-box">
+      <div class="row">
+        <div class="col s9 l10 m10" id="searchboxdiv">
+          <input type="text" id="searchText" />
+        </div>
+        <div class="col s3 m2 l2" >
+          <div class="section"style="margin-top: -20px;"><span id = "clickBox"></span></div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</nav>
+
+    <div id="main">
+    <div class="container">
+      <div class="section">
+        <h3 class="center"> Player Profiles </h3>
+        <div class="divider" id="divider"></div>
+        <div class="row" id="players">
+          <div class="preloader-wrapper big active col-offset-6">
+             <div class="spinner-layer spinner-blue-only center">
+               <div class="circle-clipper left">
+                 <div class="circle"></div>
+                 </div><div class="gap-patch">
+                   <div class="circle"></div>
+                   </div><div class="circle-clipper right">
+                     <div class="circle"></div>
+               </div>
+             </div>
+          </div>
+        </div>
+
+        <div class="row" id="search-results">
+          <div class="preloader-wrapper big active col-offset-6">
+             <div class="spinner-layer spinner-blue-only center">
+               <div class="circle-clipper left">
+                 <div class="circle"></div>
+                 </div><div class="gap-patch">
+                   <div class="circle"></div>
+                   </div><div class="circle-clipper right">
+                     <div class="circle"></div>
+               </div>
+             </div>
+          </div>
+        </div>
+
+
+        <div class="divider" id="divider"></div>
+      </div>
+
+      <div class="section">
+        <div class="btn center" id = "load-more">Show More</div>
+      </div>
+
+    </div>
+
+    <div id="main">
+    <div id="footer"></div>
+    <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/header.js"></script>
+    <script type="text/javascript" src="../js/loginCheck.js"></script>
+    <script type="text/javascript" src="../js/Players.js"></script>
+
+  </body>
+</html>

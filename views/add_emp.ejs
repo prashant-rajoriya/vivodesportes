@@ -1,0 +1,43 @@
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>Admin:Tournaments:Edit</title>
+  <link rel="stylesheet" type="text/css" href="/admin/semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="/admin/semantic/dist/semantic.min.js"></script>
+
+</head>
+<body>
+
+  <div class="ui left inverted  vertical menu sidebar visible">
+  <a class="item" href="http://www,vivodesportes.com"> Vivo Desportes</a>
+  <a class="item active" href="/../admin/admin.html"> Statistics</a>
+  <a class="item" href="/../admin/player.html"> Players </a>
+  <a class="item" href="/../admin/blog_admin.html"> Blog </a>
+  <a class="item" href="/../admin/aboutus_admin.html"> About Us</a>
+  <a class="item" href="#">Videos</a>
+  <a class="item" href="/../admin/tourn.html"><i class="soccer icon"></i> Tournaments </a>
+  </div>
+<div class="pusher">
+
+
+  <form class="ui form" action="/aboutUs/added" method="POST" enctype="multipart/form-data" style="padding:30px;width:500px;">
+<div>
+  <div class="ui black tag label">Name:</div>
+    <input type="text" id="empName" name="empName" value="" maxlength="100" />
+    <br />
+  </div>
+  <div>
+    <label class="ui teal tag label">Designation</label>
+    <input type="text" id="empDes" name="empDes" value="" maxlength="100" />
+  </div>
+<div>
+    <div class="ui black tag label">Employee Image:</div>
+    <input type="file" id="empPic" name="empPic"/>
+</div>
+<div>
+    <input class="ui green button" type="submit" value="Submit" /><br />
+</div>
+  </form>
+</body>
+</html>

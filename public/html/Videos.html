@@ -1,0 +1,259 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <!-- Include Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <!-- Include Bootstrap Min Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+  <title>Vivo Desportes</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/videos.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  </head>
+
+  <body>
+    <!--Import jQuery before materialize.js-->
+
+    <div id="nameheader"></div>
+      <div id="main">
+        <div class="row" id = "players">
+          <div id="homescreen-content">
+          <div class="section">
+           <div class="row">
+            <h4 align="center">Skill Videos</h4>
+             <div id="homescreen-content">
+
+               <div class="col s4" id="mainVideos">
+                 <div class="card">
+                   <div class="card-image">
+                     <img src="../images/360 Zidane.jpg">
+                   </div>
+                   <div class="card-content">
+                     <p>How do you do a 360 with a soccer ball? Like this of course, by rolling the ball around your body from a chest stall to a neck stall and back again. It looks really cool, doesn't involve hands like a lot of the roll tricks do, and is sure to impress your mates.</p>
+                   </div>
+                   <div class="card-action">
+                   <button data-id = "3602" id="knowmorebtn"><a href = "/videos/skills?id=1">Know more</a></button>
+                 </div>
+                </div>
+              </div>
+
+              <div class="col s4 " id="mainVideos">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../images/The Sliding Tackle.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>A sliding tackle or slide tackle is a tackle in football. It is completed with one leg extended to push the ball away from the opposing player. A sliding tackle or slide tackle is a tackle in football. It is completed with one leg extended to push the ball away from the opposing player.</p>
+                  </div>
+                  <div class="card-action">
+                      <button onclick="skills(this)" data-id = "Slide" id="knowmorebtn"><a href = "/videos/skills?id=2">Know more</a></button>
+                    </div>
+               </div>
+             </div>
+
+             <div class="col s4 " id="mainVideos">
+               <div class="card">
+                 <div class="card-image">
+                   <img src="../images/The Nutmeg.jpg">
+                 </div>
+                 <div class="card-content">
+                   <p>A nutmeg is a technique used in association football,. The aim is to kick, roll or throw the ball between an opponent's legs (feet).</p>
+                 </div>
+                 <div class="card-action">
+                     <button onclick="skills(this)" data-id = "Nutmeg" id="knowmorebtn"><a href = "/videos/skills?id=3">Know more</a></button>
+                   </div>
+              </div>
+            </div>
+
+                <div class="col s4 " id="mainVideos">
+                 <div class="card">
+                   <div class="card-image">
+                     <img src="../images/The Fake Shot.jpg">
+                   </div>
+                   <div class="card-content">
+                     <p>The fake shot is one of the best overall dribbling moves and skill moves. It is also the best, in my opinion, first time skill move.</p>
+                   </div>
+                   <div class="card-action">
+                       <button onclick="skills(this)" data-id = "Fake" id="knowmorebtn"><a href = "/videos/skills?id=4">Know more</a></button>
+                     </div>
+                </div>
+              </div>
+
+              <div class="col s4 " id="mainVideos">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../images/The Elastico.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>The Flip flap (also known as the elastico and la culebrita) is a dribbling move, or feint, in football, used to fool a defensive player into thinking the offensive player, in possession of the ball, is going to move in a direction they are not intending to move in. Players perform it by using the exterior of their dominant foot to push the ball towards their dominant side, then quickly move the dominant foot around the ball and uses its interior to push the ball to their non-dominant side.</p>
+                  </div>
+                  <div class="card-action">
+                    <button onclick="skills(this)" data-id = "Elastico" id="knowmorebtn"><a href = "/videos/skills?id=5">Know more</a></button>
+                  </div>
+               </div>
+             </div>
+
+             <div class="col s4 " id="mainVideos">
+               <div class="card">
+                 <div class="card-image">
+                   <img src="../images/The Diving Header.jpg">
+                 </div>
+                 <div class="card-content">
+                   <p>The diving header is a technique which uses the head to direct the ball, but involves the player's whole body. Favoured by attacking players, the diving header requires the footballer to dive towards the ball, with both feet off the ground in order to make contact with the ball.</p>
+                 </div>
+                 <div class="card-action">
+                    <button onclick="skills(this)" data-id = "Dive" id="knowmorebtn"><a href = "/videos/skills?id=6">Know more</a></button>
+                  </div>
+              </div>
+            </div>
+
+                <div class="col s4 " id="mainVideos">
+                 <div class="card">
+                   <div class="card-image">
+                     <img src="../images/The Body Feint.jpg">
+                   </div>
+                   <div class="card-content">
+                     <p>You start off by saying using one foot instead of your whole body will be less effective, but then you say if your run at someone and do a stepover and put your weight on ONE foot you will sell it.</p>
+                   </div>
+                   <div class="card-action">
+                   <button onclick="skills(this)" data-id = "Body" id="knowmorebtn"><a href = "/videos/skills?id=7">Know more</a></button>
+                 </div>
+                </div>
+              </div>
+
+              <div class="col s4 " id="mainVideos">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../images/The Back Heel.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>A kick played by the heel which typically travels in the opposite direction from which the player is facing.</p>
+                  </div>
+                  <div class="card-action">
+                     <button onclick="skills(this)" data-id = "Back" id="knowmorebtn"><a href = "/videos/skills?id=8">Know more</a></button>
+                   </div>
+               </div>
+             </div>
+
+             <div class="col s4 " id="mainVideos">
+               <div class="card">
+                 <div class="card-image">
+                   <img src="../images/Scorpian Kick.jpg">
+                 </div>
+                 <div class="card-content">
+                   <p>The scorpion kick is a kick that was created by Colombian goalkeeper, Rene Higuita. A scorpion kick is one of the hardest kicks to pull off in a game of soccer. It has the general concept of a bicycle kick, kicking a ball that is in front of you from going into goal, but in different form.</p>
+                 </div>
+                 <div class="card-action">
+                    <button onclick="skills(this)" data-id = "Scorpion" id="knowmorebtn"><a href = "/videos/skills?id=9">Know more</a></button>
+                  </div>
+              </div>
+            </div>
+
+                <div class="col s4 " id="mainVideos">
+                 <div class="card">
+                   <div class="card-image">
+                     <img src="../images/Scissors& Volley.jpg">
+                   </div>
+                   <div class="card-content">
+                     <p>A volley is an air-borne strike in association football, where a player's feet meets and directs the ball in an angled direction before it has time to reach the ground. A volley can be extremely hard to aim and requires good foot-eye coordination and timing.</p>
+                   </div>
+                   <div class="card-action">
+                      <button onclick="skills(this)" data-id = "Volley" id="knowmorebtn"><a href = "/videos/skills?id=10">Know more</a></button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col s4 " id="mainVideos">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../images/Ronaldo Chop.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>The Ronaldo Chop is a move when you face the defender face to face. You go at high speed at the defender. For example you dribble with the right foot. Once you get closer to the defender you kind of jump into the ball forward while kicking the ball behind the opposite leg that is swinging in front of the ball. So the ball goes behind the front leg while you jump towards the ball. Taking off with the right foot. Hitting the ball with the inside of the foot while the left leg is kind of swinging around the ball.</p>
+                  </div>
+                  <div class="card-action">
+                     <button onclick="skills(this)" data-id = "Ronaldo" id="knowmorebtn"><a href = "/videos/skills?id=11">Know more</a></button>
+                   </div>
+               </div>
+             </div>
+
+             <div class="col s4 " id="mainVideos">
+               <div class="card">
+                 <div class="card-image">
+                   <img src="../images/No Look Pass.jpg">
+                 </div>
+                 <div class="card-content">
+                   <p>Look right, pass left. Defenders will be trying to read your eyes and head. When you see a teammate to your left instead of staring at them, turn your head so you are looking right when you pass and this will confuse the defender. This is not a no look pass, you can still see your teammate in your peripheral vision but your head is slightly turned. </p>
+                 </div>
+                 <div class="card-action">
+                    <button onclick="skills(this)" data-id = "noLook" id="knowmorebtn"><a href = "/videos/skills?id=12">Know more</a></button>
+                  </div>
+              </div>
+            </div>
+
+                <div class="col s4 " id="mainVideos">
+                 <div class="card">
+                   <div class="card-image">
+                     <img src="../images/Bicycle Kick.jpg">
+                   </div>
+                   <div class="card-content">
+                     <p>A bicycle kick, also known as an overhead kick or scissors kick, is a physical move in association football. It is achieved by throwing the body backward up into the air, making a shearing movement with the lower limbs to get one leg in front of the other in order to strike an airborne ball rearwards above head level, without resting on the ground. In most languages, the manoeuvre is named after either the cycling motion or the scissor motion that it resembles. Its complexity and uncommon performance in competitive football matches makes it one of association football's most celebrated skills.</p>
+                   </div>
+                   <div class="card-action">
+                      <button onclick="skills(this)" data-id = "Bicycle" id="knowmorebtn"><a href = "/videos/skills?id=13">Know more</a></button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col s4 " id="mainVideos">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../images/Rainbow.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>The soccer rainbow is a flashy move that amazes the crowd and can double as an offensive tool to push the ball forward. It's a slightly tricky technique that involves using your foot to scoot the ball up your leg, then kicking it with your opposite heel so that it arcs neatly over your head. Read on to learn more about how to do a rainbow.</p>
+                  </div>
+                  <div class="card-action">
+                   <button onclick="skills(this)" data-id = "rainBow" id="knowmorebtn"><a href = "/videos/skills?id=14">Know more</a></button>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col s4 " id="mainVideos">
+               <div class="card">
+                 <div class="card-image">
+                   <img src="../images/Beckham Freekicks.jpg">
+                 </div>
+                 <div class="card-content">
+                   <p>Take a freekick from outside the D box, Shoot it the way formar Manchester united player hits it. And finds the back of the net making it look extremely easy.</p>
+                 </div>
+                 <div class="card-action">
+                    <button onclick="skills(this)" data-id = "Beckham" id="knowmorebtn"><a href = "/videos/skills?id=15">Know more</a></button>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="footer"></div>
+
+  <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/videos.js"></script>
+
+  </body>
+</html>

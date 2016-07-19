@@ -1,0 +1,451 @@
+  <!-- Player Logged in and after clicking on edit skills in editprofile.html or changepassword.html page this page will ve redirected -->
+
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+       <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <!-- Include Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <!-- Include Bootstrap Min Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+    
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+    <div id="nameheader"></div>
+    <div id="main">
+    <div class="white">
+         <br><br>
+       <div class="container">
+           <div class="row">
+             <div class="col s5 section">
+               <br><br>
+
+               <div id="left_panel">
+
+               </div>
+
+               <br><br><br>
+                 <div class="valign col l10">
+                   <ul class="collection">
+                     <li class="collection-item"><a href="EditProfile.html"> <i class="small material-icons">perm_identity</i> &nbsp&nbsp&nbspAccount </a></li>
+                     <li class="collection-item"><a href="EditSkills.html"><i class="small material-icons">perm_data_setting</i> &nbsp&nbsp&nbspSkills </a></li>
+                     <li class="collection-item"><a href="EditPassword.html"><i class="small material-icons">settings</i> &nbsp&nbsp&nbspChange Password </a></li>
+                   </ul>
+                   <br><br><br>
+                </div>
+
+               <div class="row valign col l9">
+                 <a class="waves-effect waves-light btn red" id="apply_rating"><i class="material-icons right">star</i>Apply For Rating</a>
+               </div>
+             </div>
+
+              <div class="col s7 section">
+
+                 <div class="row">
+                   <br><br><br><br><br>
+                           <form class="col s12">
+                             <div class="row">
+                               <div class="col s1">
+                                 <i class="medium material-icons">perm_data_setting</i>
+                               </div>
+                               <div class="col s10">
+                                <h5>&nbsp&nbsp Skills Information</h5></span>
+                               </div>
+                             </div>
+                             <br><br><br>
+
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp How fast can you run a Sprint of 25 meters? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal1">Hint</a>
+                                 <div id="modal1" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Acceleration</h4>
+                                     <p> <br> Note - Cristiano Ronaldo&#39s time = 3.61 seconds</p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="acceleration" type="text" class="validate disabled=""">
+                                 <label class="active" for="acceleration">Acceleration</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp How fast can you complete the given below course Sprint? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal17">Hint</a>
+                                 <div id="modal17" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Agility</h4>
+                                     <div class="row">
+                                     <p><br> Note – Cristiano Ronaldo&#39s time = 6.35 seconds <br></p>
+                                     </div>
+                                     <div class="row">
+                                     <img src="../images/agility.png" alt="" class="responsive-img">
+                                     </div>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="agility" type="text" class="validate">
+                                 <label class="active" for="agility">Agility</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp What is the top speed you can attain on the football field?  &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal8">Hint</a>
+                                 <div id="modal8" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Sprint speed</h4>
+                                     <p><br> Note – Gareth Bale&#39s top speed= 34.7 km/hr <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Sprint_speed" type="text" class="validate">
+                                 <label class="active" for="Sprint_speed">Sprint speed</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp How high can you jump to head the ball in centimetres? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal3">Hint</a>
+                                 <div id="modal3" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Jumping</h4>
+                                     <p><br> Note – Cristiano Ronaldo&#39s jump = 80 cm <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="jumping" type="text" class="validate">
+                                 <label class="active" for="jumping">Jumping</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp What is the maximum distance you can cover in a football game? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal18">Hint</a>
+                                 <div id="modal18" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Stamina</h4>
+                                     <p><br> Note – Maximum distance covered by a football player in EPL= 13.6 km <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="stamina" type="text" class="validate">
+                                 <label class="active" for="stamina">Stamina</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp On a scale of 1 to 100 how would you rate your strength as a player? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal5">Hint</a>
+                                 <div id="modal5" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Strength</h4>
+                                     <p> <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="strength" type="text" class="validate">
+                                 <label class="active" for="strength">Strength</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp How many touches would you need to control the Grounded pass, Grounded cross, Chipped pass, Aerial through? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal6">Hint</a>
+                                 <div id="modal6" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Ball control</h4>
+                                     <p> <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="grounded_pass" type="text" class="validate">
+                                 <label class="active" for="grounded_pass">Grounded Pass</label>
+                               </div>
+                               <div class="input-field col s4">
+                                 <input value="" id="grounded_cross" type="text" class="validate">
+                                 <label class="active" for="grounded_cross">Grounded Cross</label>
+                               </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="chipped_pass" type="text" class="validate">
+                                 <label class="active" for="chipped_pass">Chipped Pass</label>
+                               </div>
+                               <div class="input-field col s4">
+                                 <input value="" id="aerial_through" type="text" class="validate">
+                                 <label class="active" for="aerial_through">Aerial Through</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp Out of 10 times, if you chip the ball to your teammate 15 meters away from you, how many will be in the range of 2 feet around him? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal7">Hint</a>
+                                 <div id="modal7" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Long Passing</h4>
+                                     <p><br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Long_Passing" type="text" class="validate">
+                                 <label class="active" for="Long_Passing">Long Passing</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp If you cross the ball 10 times ,how many of them will result in goals? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal9">Hint</a>
+                                 <div id="modal9" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Crossing</h4>
+                                     <p> <br> The type of cross is irrelevant.<br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Crossing" type="text" class="validate">
+                                 <label class="active" for="Crossing">Crossing</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp How many skill moves can you perform? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal10">Hint</a>
+                                 <div id="modal10" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Dribbling</h4>
+                                     <p> <br> example – rainbow, fake shot, step over, Ronaldo chop, 360 etc.<br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Dribbling" type="text" class="validate">
+                                 <label class="active" for="Dribbling">Dribbling</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp With reference to the image in hint, how many shots can you take on target from within the d-box? <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp How many of those can you score? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal11">Hint</a>
+                                 <div id="modal11" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Finishing</h4>
+                                     <p>With reference to the image, there are 10 locations showed inside the D-box, please answer the questions in accordance with the image. </p><br>
+                                     <img src="../images/finishing.png" alt="" class="responsive-img">
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div><br>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Finishing_shots" type="text" class="validate">
+                                 <label class="active" for="Finishing_shots">Shots on target from within D-box?</label>
+                               </div>
+                               <div class="input-field col s4">
+                                 <input value="" id="Finishing_score" type="text" class="validate">
+                                 <label class="active" for="Finishing_score">how many of those can you score? </label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp How many short passes can you complete in a game? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal12">Hint</a>
+                                 <div id="modal12" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Short passing</h4>
+                                     <p> <br> note – Xavi completes an approx of 84 passes in a game<br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Short_passing" type="text" class="validate">
+                                 <label class="active" for="Short_passing">Short passing</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp  Out of 10 headers how many headers will you get on target?<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Out of 10 headers will you be able to successfully pass/score? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal13">Hint</a>
+                                 <div id="modal13" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Heading accuracy</h4>
+                                     <p>Q)<br> Note – Ronaldo scores 8 out of 10 headers attempted <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div><br>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Header_ontarget" type="text" class="validate">
+                                 <label class="active" for="Header_ontarget">Headers on target(out of 10)</label>
+                               </div>
+                               <div class="input-field col s4">
+                                 <input value="" id="Header_score" type="text" class="validate">
+                                 <label class="active" for="Header_score">Headers successfully pass/score</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp Penalties given to you by your team? <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp How many of those penalties have you scored? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal14">Hint</a>
+                                 <div id="modal14" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Penalties</h4>
+                                     <p>Q) <br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Penalties_attempt" type="text" class="validate">
+                                 <label class="active" for="Penalties_attempt">Penalties given by you?</label>
+                               </div>
+                               <div class="input-field col s4">
+                                 <input value="" id="Penalties_score" type="text" class="validate">
+                                 <label class="active" for="Penalties_score">How many scored?</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp What is the furthest distance from which you can get 3 consecutive shots on target? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal15">Hint</a>
+                                 <div id="modal15" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Shot power</h4>
+                                     <p> <br> Note – Juninho gets 3 shots on target consecutively from 70 meters<br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="Shot_power" type="text" class="validate">
+                                 <label class="active" for="Shot_power">Shot power</label>
+                               </div>
+                             </div>
+                             <br><br>
+                             <div class="row">
+                               <span><i class="tiny material-icons">star</i>&nbsp&nbsp  In 10 different situations:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp How many successful tackles?<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp How many unsuccessful tackles? <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp How many fouls would do you commit? &nbsp&nbsp&nbsp&nbsp</span>
+                               <a class="waves-effect waves-light btn-small modal-trigger" href="#modal16">Hint</a>
+                                 <div id="modal16" class="modal">
+                                   <div class="modal-content">
+                                     <h4>Defending Ability</h4>
+                                     <p>In 10 different situations<br> Q)<br></p>
+                                   </div>
+                                   <div class="modal-footer">
+                                     <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Got it!!</a>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="success_tackle" type="text" class="validate">
+                                 <label class="active" for="success_tackle">Successful tackles </label>
+                               </div>
+                               <div class="input-field col s4">
+                                 <input value="" id="unsuccess_tackle" type="text" class="validate">
+                                 <label class="active" for="unsuccess_tackle">unsuccessful tackles</label>
+                               </div>
+                             </div>
+                             <div class="row">
+                               <div class="input-field col s4">
+                                 <input value="" id="fouls_commit" type="text" class="validate">
+                                 <label class="active" for="fouls_commit">Fouls commits </label>
+                               </div>
+                             </div>
+
+                           <br><br>
+                           <div class="row">
+                             <div class="col s4">
+                               <a class="waves-effect waves-light btn" id="data_submit">Submit</a>
+                             </div>
+                           </div>
+                          </form>
+               </div>
+              </div>
+             </div>
+           </div>
+         </div>
+         </div>
+
+    <div id="footer"></div>
+      <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <script type="text/javascript" src="../js/EditSkills.js"></script>
+    </body>
+  </html>

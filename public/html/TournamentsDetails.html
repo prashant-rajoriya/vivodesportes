@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <!-- Include Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <!-- Include Bootstrap Min Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <div id="nameheader"></div>
+      <div id="main">
+      <div class="row section">
+           <br>
+           <div class="section">
+             <div class="row" id = "tournament-describe">
+             </div>
+      <!--       </div> -->
+               <div class="row container">
+                 <ul>
+                   <font size="6">
+                     <li>Features:</li>
+                   </font>
+                 </ul>
+
+                 <div id="tournament-features">
+                 </div>
+               </div>
+      <!--       <div class=""> -->
+               <div class="row container">
+                 <ul>
+                   <font size="6">
+                     <li>Rules and Regulations:</li>
+                   </font>
+                 </ul>
+
+                 <div id="tournament-rules">
+                 </div>
+
+                 <div "row container section">
+                   <a class="waves-effect waves-light btn-flat-small modal-trigger" href="#modal1">More rules</a>
+                   <div id="modal1" class="modal">
+                     <div class="row modal-content">
+                       <h4 align="center">RULES</h4>
+                        <!-- <div class="conatiner">  -->
+                         <div id="more_rules">
+                         </div>
+                       <!-- </div> -->
+                     </div>
+                   </div>
+               </div>
+           </div>
+
+
+           <div class="container row section" >
+             <div class="col" id = "Register">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Register<i class="material-icons right">send</i></a>
+                  <div id="modal2" class="modal">
+                        <div class="modal-content">
+                        <p>To register please contact<h5>Vivek Kumar Bodh</h5></p>
+                        <p>call <b>999789568</b></p>
+                        <p>or</p>
+                          <h6>Enter Your Details</h6>
+                          <div class="row">
+                                <a form class="col s12">
+                                  <div class="row">
+                                    <div class="input-field col s6">
+                                      <input placeholder="First Name" id="first_name" type="text" class="validate" name="f_name" >
+                                      <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                      <input id="last_name" type="text" class="validate" name="l_name">
+                                      <label for="last_name">Last Name</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="input-field col s6" name='phone'>
+                                      <input placeholder="Phone" id="phone_name" type="text" class="validate">
+                                      <label for="phone">Phone</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="input-field col s12" name='email'>
+                                      <input id="email" type="email" class="validate">
+                                      <label for="email">Email</label>
+                                    </div>
+                                  </div>
+                                <!--   <input type="hidden" value = "+ f_name + l_name + phone + email" name = 'details' > -->
+                                 </div>
+                        <div class="modal-footer">
+
+                         <button class=" modal-action modal-close waves-effect waves-green btn-flat" id='sendDetail' type="submit">Hastala Vista ;)</a>
+                        </div>
+                      </div>
+                              </div>
+
+
+
+          </form>
+
+             </div>
+
+               <div class="col" id = "Fixtures">
+               </div>
+               <br>
+             </div>
+       <!-- </div> -->
+      </div>
+      </div>
+
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/tournamentdetails.js"></script>
+  </body>
+  </html>

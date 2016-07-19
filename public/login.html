@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>
+	test
+	</title>
+	<script src="/javascripts/lib/jquery-min.js"></script>
+	<script type="text/javascript">
+    function init() {
+      console.log("clicked");
+  $.ajax({
+  	type: 'POST',
+    url: '/api/login',
+    dataType: 'text',
+    data:{
+    	username:"axin",
+    	password:"axin"
+    },
+    success: function(d) {
+      console.log("loggedin!!?? "+d);
+    },
+    error: function(xhr, status, err) {
+      console.error(status, err.toString());
+    }
+  });
+  }
+	</script>
+</head>
+<body>
+<h1>test</h1>
+<button id="a" onclick="init()">login</button>
+</body>
+</html>

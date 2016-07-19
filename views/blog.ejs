@@ -1,0 +1,88 @@
+
+<script type="text/javascript" src="/../js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="/../js/materialize.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="/../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="/../css/materialize.min.css"  media="screen,projection"/>
+<!-- Include Bootstrap Css -->
+<link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
+<!-- Include Bootstrap Min Css -->
+<link rel="stylesheet" href="/../assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/../assets/css/style.css">
+
+<!--Import Google Icon Font-->
+
+<!--Import materialize.css-->
+
+<!--Let browser know website is optimized for mobile-->
+
+<% include header_main%>
+
+
+<body role="document">
+
+  <div id="index-banner" class="parallax-container" style="height:660px;" >
+     <div class="section no-pad-bot" style="position:relative;z-index:1">
+       <div class="container">
+         <br><br><br><br>
+         <h1 class="header center yellow-text text-darken-2" style="color: rgba(8, 107, 101, 0.66) !important;font-size:150px;font-family:cursive;">Blogs</h1>
+                  <br><br>
+
+       </div>
+     </div>
+     <div class="parallax" style="z-index:0;"><img src="/../images/Background/background3.jpg" ></div>
+   </div>
+
+    <div class="row" style="margin-right:34px;margin-left:34px;">
+        <% if(posts){%>
+            <ul>
+                <% posts.forEach(function(post) { %>
+                  <div class='col s12 m4'>
+                    <div class="card">
+              <span class="card-title">
+                <h3 style="padding:10px;text-align:center;">
+                    <a href='/blog/show/<%= post._id %>'><%=post.title%></a>
+                </h3>
+              </span>
+
+
+
+
+              <div class="card-image">
+                    <p style="text-align:center;">Posted in <%= post.category%> </a>   by <%= post.author%> on <%= moment(post.date).format(" MM-DD-YYYY")%></p>
+                     <img class="materialboxed" style="height:300px;" src='/image/uploads/blogs/<%= post.mainimage%>'>  </div>
+                  <div class="card-content" style="height:140px;overflow:hidden;text-overflow:ellipsis;">  <%- truncateText(post.body,400)%></div>
+            <div class="card-action" style="text-align:center;">  <a class="btn waves-effect black" href='/blog/show/<%= post._id%>'>Read more</a>
+            </div>
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+                <% });%>
+            </ul>
+        </div>
+            <%}%>
+
+<div style="text-align:center;">
+        <a href="/blog/load/<%=counter%>"><button style="margin-bottom:60px;" class="btn waves-effect red btn-large" value="load more">Load More</button></a>
+<div>
+
+    </div>
+
+</body>
+<script>
+$(document).ready(function(){
+      $('.parallax').parallax();
+       $('.materialboxed').materialbox();
+    });
+  </script>
+
+<% include footer%>

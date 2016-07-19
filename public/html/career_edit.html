@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <!-- Include Bootstrap Min Css -->
+  <script src="../assets/js/bootstrap.js"></script>
+    <title>Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="jumbotron">
+  <div class="container">
+      <nav class="navbar navbar-inverse navbar">
+          <ul class ="nav navbar-nav">
+              <li class="active"><button class ="btn btn-xs btn-default"><a href="/">Home</a></button></li>
+              <li><button class ="btn btn-xs btn-success"><a href="/blog/add">Add Post</a></button></li>
+              <li><button class ="btn btn-xs btn-danger"><a href="/blog/delete">Delete And edit Post</a></button></li>
+              <li><button class ="btn btn-xs btn-primary"><a href="/../html/career_edit.html">Career </a></button></li>
+          </ul>
+      </nav>
+</div>
+</div>
+    <div id="career_form">
+        <form >
+            <div class="form-group">
+                <label>Career Text:</label>
+                <textarea class="form-control" id="input1" name="career_text">"mallu"</textarea>
+            </div>
+            <div class="form-group">
+                <p>Please use the embed link of video with height fixed at 500 and width 281</p>
+                <label>Youtube:</label>
+                <input name="src" type="text" class="form-control " id="input2"/>
+            </div>
+            <input name="submit" type="button" id="update" value="Update" class="btn btn-default"/>
+        </form>
+    </div>
+<footer>
+    <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascr  ipt" src="../js/materialize.min.js"></script>
+    <script src="/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace('career_text');</script>
+    <script type="text/javascript" src="../js/career_edit.js"></script>
+    <p>Blog &copy; 2016</p>
+
+</footer>
+
+</body>
+</html>

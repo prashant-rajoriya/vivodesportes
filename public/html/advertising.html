@@ -1,0 +1,403 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <!-- Include Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <!-- Include Bootstrap Min Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+      <link rel="stylesheet" href="../assets/css/animate.min.css">
+      <link href ="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Vivo Desportes</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    </head>
+    <style>
+          .cube-center{
+            margin-left:45%;
+            margin-top: 300px;
+             width: 50%;
+             margin-bottom: 100px;
+              }
+
+.cube-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-animation: fade-in 1s ease-in 1s forwards;
+          animation: fade-in 1s ease-in 1s forwards;
+  opacity: 0;
+}
+.cube-container #cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-animation: rotate 5s ease-in-out 1s;
+          animation: rotate 5s ease-in-out 1s;
+}
+.cube-container #cube div {
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+}
+.cube-container #cube .front {
+  background-color: #1674BC;
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+          transform: rotateY(0deg) translateZ(100px);
+}
+.cube-container #cube .back {
+  background-color: #00A396;
+  -webkit-transform: rotateX(180deg) translateZ(100px);
+          transform: rotateX(180deg) translateZ(100px);
+}
+.cube-container #cube .left {
+  background-color: #81C540;
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+}
+.cube-container #cube .right {
+  background-color: #F5B52E;
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+}
+.cube-container #cube .top {
+  background-color: #EE5C35;
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+}
+.cube-container #cube .bottom {
+  background-color: #EA225E;
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+          transform: rotateX(-90deg) translateZ(100px);
+}
+
+.show-front {
+  -webkit-transform: translateZ(-100px) rotateY(0deg) !important;
+          transform: translateZ(-100px) rotateY(0deg) !important;
+}
+
+.show-back {
+  -webkit-transform: translateZ(-100px) rotateX(-180deg) !important;
+          transform: translateZ(-100px) rotateX(-180deg) !important;
+}
+
+.show-left {
+  -webkit-transform: translateZ(-100px) rotateY(90deg) !important;
+          transform: translateZ(-100px) rotateY(90deg) !important;
+}
+
+.show-right {
+  -webkit-transform: translateZ(-100px) rotateY(-90deg) !important;
+          transform: translateZ(-100px) rotateY(-90deg) !important;
+}
+
+.show-top {
+  -webkit-transform: translateZ(-100px) rotateX(-90deg) !important;
+          transform: translateZ(-100px) rotateX(-90deg) !important;
+}
+
+.show-bottom {
+  -webkit-transform: translateZ(-100px) rotateX(90deg) !important;
+          transform: translateZ(-100px) rotateX(90deg) !important;
+}
+
+#pick_a_color {
+  margin-left:44%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*margin: 70px 0; */
+}
+#pick_a_color .blue {
+  width: 50px;
+  height: 50px;
+  background-color: #1674BC;
+  margin: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: fade-in 1s ease-in forwards;
+          animation: fade-in 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+#pick_a_color .teal {
+  width: 50px;
+  height: 50px;
+  background-color: #00A396;
+  margin: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: fade-in 1s ease-in forwards;
+          animation: fade-in 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+#pick_a_color .green {
+  width: 50px;
+  height: 50px;
+  background-color: #81C540;
+  margin: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: fade-in 1s ease-in forwards;
+          animation: fade-in 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+#pick_a_color .yellow {
+  width: 50px;
+  height: 50px;
+  background-color: #F5B52E;
+  margin: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: fade-in 1s ease-in forwards;
+          animation: fade-in 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+#pick_a_color .orange {
+  width: 50px;
+  height: 50px;
+  background-color: #EE5C35;
+  margin: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: fade-in 1s ease-in forwards;
+          animation: fade-in 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+#pick_a_color .pink {
+  width: 50px;
+  height: 50px;
+  background-color: #EA225E;
+  margin: -5px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: fade-in 1s ease-in forwards;
+          animation: fade-in 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) translateZ(0px);
+            transform: rotateY(0deg) rotateX(0deg) translateZ(0px);
+  }
+    100% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg) translateZ(-100px);
+            transform: rotateY(360deg) rotateX(360deg) translateZ(-100px);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) translateZ(0px);
+            transform: rotateY(0deg) rotateX(0deg) translateZ(0px);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg) translateZ(-100px);
+            transform: rotateY(360deg) rotateX(360deg) translateZ(-100px);
+  }
+}
+
+.title{
+
+  font-size:-webkit-xxx-large ;
+}
+
+    </style>
+
+    <body>
+      <ul id="userdropdown" class="dropdown-content">
+      <div id = "toastArea" class="center"></div>
+        <li><a href="DisplayProfile.html">My Profile</a></li>
+        <li id = "logout"><a href="/api/logout">Log out</a></li>
+      </ul>
+      <nav class="indigo" role="navigation" id = "header">
+      <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down" style="margin-left:2%;margin-top:20px;">
+                <li id="pagenavbtn"><a href="/../html/Players.html">Players</a></li>
+                <li id="pagenavbtn"><a href="/../html/Tournaments.html">Tournaments</a></li>
+                <li id="pagenavbtn"><a href="/../html/Videos.html">Videos</a></li>
+                <li id="pagenavbtn"><a href="/../html/About.html">About</a></li>
+                <li id="pagenavbtn"><a href="/../html/Careers.html">Careers</a></li>
+                <li id="pagenavbtn"><a href="/../html/advertising.html">Advertising</a></li>
+                <li id="pagenavbtn"><a href="/blog" target="_self">Blog</a></li>
+            </ul>
+            <ul id="mobile-nav" class="side-nav">
+              <li><div id = "user-check1"> <a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="userdropdown" id="user-drop">Hey <span id="display-name1"></span><i class="material-icons right">arrow_drop_down</i></a></div></li>
+              <li><a href="/../html/Players.html">Player Profiles</a></li>
+              <li><a href="/../html/Tournaments.html">Tournaments</a></li>
+              <li><a href="/../html/Videos.html">Videos</a></li>
+              <li><a href="/../html/About.html">About</a></li>
+              <li><a href="/../html/Careers.html">Careers</a></li>
+              <li><a href="/../html/advertising.html">Advertising</a></li>
+              <li><a href="/blog" target="_self">Blog</a></li>
+              <span id = "visitor1"><li><a href="/../html/login.html" id="loginbutton">Login</a></li>
+              <li><a href="/../html/Register.html" id="registerbutton">Sign Up</a></li> </span>
+            </ul>
+            <a href="/../index.html"><img class="center responsive" id="logoimage" src="../images/VivoDl.png" style="margin-left:3%;"></img></a>
+            <ul class="right hide-on-med-and-down" style="margin-top:20px;">
+                <li><div id = "user-check"> <a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="userdropdown" id="user-drop">Hey <span id="display-name"></span><i class="material-icons right">arrow_drop_down</i></a></div></li>
+                <span id = "visitor"><li><a class="btn-flat btn-small" href="/../html/login.html" id="loginbutton">Login</a></li>
+                <li><a class="btn-flat btn-small " href="/../html/Register.html" id="registerbutton">Sign Up</a></li> </span>
+            </ul>
+      </div>
+      </nav>
+
+       <script type="text/javascript" src="../js/header.js"></script>
+      <script type="text/javascript" src="../js/loginCheck.js"></script>
+
+<div class="cube-center">
+                <div class='cube-container'>
+  <div id='cube'>
+    <div class='front'></div>
+    <div class='back'></div>
+    <div class='left'></div>
+    <div class='right'></div>
+    <div class='top'></div>
+    <div class='bottom'></div>
+  </div>
+</div>
+</div>
+
+
+<div id='pick_a_color'>
+  <div class='blue'></div>
+  <div class='teal'></div>
+  <div class='green'></div>
+  <div class='yellow'></div>
+  <div class='orange'></div>
+  <div class='pink'></div>
+</div>
+
+
+<div class="title" style="margin-left:43%;">Coming Soon!</div>
+
+      <footer id="colophon" class="footer site-footer" role="contentinfo" >
+
+
+               <div class="footer-bottom" style="height:150px;">
+                 <div class="item wow animated fadeInRight" style="height:100px;" data-wow-delay=".35s">
+                   <div class="container">
+
+                    <ul style="font-size:medium;text-align:center;">
+                        <li><a href="/">Home</a></li>&nbsp;|&nbsp;
+                        <li><a href="/html/advertising.html">Advertising</a></li>&nbsp;|&nbsp;
+                        <li><a href="/blog">Blog</a></li>&nbsp;|&nbsp;
+                        <li><a href="/html/About.html">About Us</a></li>&nbsp;
+                    </ul>
+                   </div>
+                   <div style="text-align:center;color:#7C7C7C"> copyright@vivodesportes2016</div>
+
+
+                   <div class="vdContact">
+                   <div><h6>Contact</h6></div>
+                   <div><i class="fa fa-envelope fa-2x"  aria-hidden="true"></i> &nbsp <a href = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=hrvivodesportes@gmail.com">hrvivodesportes@gmail.com</a></div>
+                   <div><i class="fa fa-phone fa-2x"  aria-hidden="true"></i>&nbsp +91 8141436399</div>
+
+
+
+
+                   </div>
+                    <div class="vdSocial">
+                      <div class="vds"><a href="https://www.facebook.com/vivo.desportes/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
+                      <div class="vds"><a href="https://twitter.com/VivoDesportes" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
+                  </div>
+
+               </div>
+
+
+
+    </footer>
+
+
+    <script>
+
+
+      (function () {
+    $(document).ready(function () {
+        $('.blue').on('click', function () {
+            return $('#cube').removeClass().addClass('show-front');
+        });
+        $('.teal').on('click', function () {
+            return $('#cube').removeClass().addClass('show-back');
+        });
+        $('.green').on('click', function () {
+            return $('#cube').removeClass().addClass('show-left');
+        });
+        $('.yellow').on('click', function () {
+            return $('#cube').removeClass().addClass('show-right');
+        });
+        $('.orange').on('click', function () {
+            return $('#cube').removeClass().addClass('show-top');
+        });
+        return $('.pink').on('click', function () {
+            return $('#cube').removeClass().addClass('show-bottom');
+        });
+    });
+}.call(this));
+
+
+    </script>
+
+      <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+
+    </body>
+  </html>

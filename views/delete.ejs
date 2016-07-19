@@ -1,0 +1,27 @@
+    <%include header%>
+    <div id="content">
+        <% if(posts){%>
+        <ul>
+            <% posts.forEach(function(post) { %>
+            <%=post.title%>
+            <form method="post" action="/blog/del">
+                <input name="postid" type="hidden" , value=<%= post._id %>>
+                <div class="form-group">
+                    <label>Do you wanna delete</label>
+                    <input name="submit" type="submit" value="Delete" class="btn btn-default"/>
+                </div>
+            </form>
+            <form method="get" , action='/blog/edit/<%= post._id%>'>
+                <input name="postid" type="hidden" , value=<%= post._id %>>
+                <div class="form-group">
+                    <label>Do you wanna Edit</label>
+                    <input name="submit" type="submit" value="Edit" class="btn btn-default"/>
+                </div>
+            </form>
+            <br>
+            <% });%>
+            <%}%>
+
+        </ul>
+    </div>
+    <%include footer%>

@@ -1,0 +1,175 @@
+<html>
+  <head>
+  <title>Vivo Desportes</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+      .vidwidth{
+        width: 100%;
+      }
+      ol li{
+        font-family:cursive;
+        font-weight: 900;
+      }
+      ol {
+        font-family:cursive;
+        font-weight: 900;
+      }
+      #vidpage {
+        width: 750px;
+      }
+      th {
+        font-style: bold;
+         font-family: monospace;
+         font-size:1.45em;
+         text-align: center;
+      }
+      td{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <div class="container" id="vidpage">
+      <div class="table-responsive" style="text-align:center;">
+        <table class="table">
+          <form method="post" action="/videos/edited?id=<%= id%>">
+            <ol>
+              <p>*Note: If EDIT button is clicked then a name and a link have to be entered</p>
+            <li>
+            <% if(typeof(data[1]) != "undefined") { %>
+              Video Name: <input id="vidName1" type="text" name="vidName1" readonly="readonly" value=<%= data[1].vidName %>>
+              Video Link    : <input id="vidLink1" type="text" name="vidLink1" readonly="readonly" value=<%= data[1].vidLink %>>
+              <button id="editButton1" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } else { %>
+              Video Name: <input id="vidName1" type="text" name="vidName1" readonly="readonly">
+              Video Link    : <input id="vidLink1" type="text" name="vidLink1" readonly="readonly">
+              <button id="editButton1" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } %>
+            </li>
+            <li>
+            <% if(typeof(data[2]) != "undefined") { %>
+              Video Name: <input id="vidName2" type="text" name="vidName2" readonly="readonly" value=<%= data[2].vidName %>>
+              Video Link    : <input id="vidLink2" type="text" name="vidLink2" readonly="readonly" value=<%= data[2].vidLink %>>
+              <button id="editButton2" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } else { %>
+              Video Name: <input id="vidName2" type="text" name="vidName2" readonly="readonly">
+              Video Link    : <input id="vidLink2" type="text" name="vidLink2" readonly="readonly">
+              <button id="editButton2" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } %>
+            </li>
+            <li>
+            <% if(typeof(data[3]) != "undefined") { %>
+              Video Name: <input id="vidName3" type="text" name="vidName3" readonly="readonly" value=<%= data[3].vidName %>>
+              Video Link    : <input id="vidLink3" type="text" name="vidLink3" readonly="readonly" value=<%= data[3].vidLink %>>
+              <button id="editButton3" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } else { %>
+              Video Name: <input id="vidName3" type="text" name="vidName3" readonly="readonly">
+              Video Link    : <input id="vidLink3" type="text" name="vidLink3" readonly="readonly">
+              <button id="editButton3" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } %>
+            </li>
+            <li>
+            <% if(typeof(data[4]) != "undefined") { %>
+              Video Name: <input id="vidName4" type="text" name="vidName4" readonly="readonly" value=<%= data[4].vidName %>>
+              Video Link    : <input id="vidLink4" type="text" name="vidLink4" readonly="readonly" value=<%= data[4].vidLink %>>
+              <button id="editButton4" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } else { %>
+              Video Name: <input id="vidName4" type="text" name="vidName4" readonly="readonly">
+              Video Link    : <input id="vidLink4" type="text" name="vidLink4" readonly="readonly">
+              <button id="editButton4" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } %>
+            </li>
+            <li>
+            <% if(typeof(data[5]) != "undefined") { %>
+              Video Name: <input id="vidName5" type="text" name="vidName5" readonly="readonly" value=<%= data[5].vidName %>>
+              Video Link    : <input id="vidLink5" type="text" name="vidLink5" readonly="readonly" value=<%= data[5].vidLink %>>
+              <button id="editButton5" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } else { %>
+              Video Name: <input id="vidName5" type="text" name="vidName5" readonly="readonly">
+              Video Link    : <input id="vidLink5" type="text" name="vidLink5" readonly="readonly">
+              <button id="editButton5" type="button"  class="btn btn-primary" style="margin-left:20px;">EDIT</button>
+              <br>
+              <hr>
+            <% } %>
+            </li>
+            </ol>
+            <button style="margin-left: 50%; margin-right: 50%" id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+          </form>
+        </table>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+      //onClick editButton1, disable readOnly of vidLink1
+      document.getElementById('editButton1').onclick = function() {
+        document.getElementById('vidName1').readOnly = false;
+        document.getElementById('vidLink1').readOnly = false;
+        document.getElementById('vidName1').required = true;
+        document.getElementById('vidLink1').required = true;
+        document.getElementById('vidName1').focus();
+      };
+
+      //onClick editButton2, disable readOnly of vidLink2
+      document.getElementById('editButton2').onclick = function() {
+        document.getElementById('vidName2').readOnly = false;
+        document.getElementById('vidLink2').readOnly = false;
+        document.getElementById('vidName2').required = true;
+        document.getElementById('vidLink2').required = true;
+        document.getElementById('vidName2').focus();
+      };
+
+      //onClick editButton3, disable readOnly of vidLink3
+      document.getElementById('editButton3').onclick = function() {
+        document.getElementById('vidName3').readOnly = false;
+        document.getElementById('vidLink3').readOnly = false;
+        document.getElementById('vidName3').required = true;
+        document.getElementById('vidLink3').required = true;
+        document.getElementById('vidName3').focus();
+      };
+
+      //onClick editButton4, disable readOnly of vidLink4
+      document.getElementById('editButton4').onclick = function() {
+        document.getElementById('vidName4').readOnly = false;
+        document.getElementById('vidLink4').readOnly = false;
+        document.getElementById('vidName4').required = true;
+        document.getElementById('vidLink4').required = true;
+        document.getElementById('vidName4').focus();
+      };
+      //onClick editButton5, disable readOnly of vidLink5
+      document.getElementById('editButton5').onclick = function() {
+        document.getElementById('vidName5').readOnly = false;
+        document.getElementById('vidLink5').readOnly = false;
+        document.getElementById('vidName5').required = true;
+        document.getElementById('vidLink5').required = true;
+        document.getElementById('vidName5').focus();
+      };
+    </script>
+</body>
+</html>

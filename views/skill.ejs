@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="../js/jquery-2.2.2.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <!-- Include Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <!-- Include Bootstrap Min Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Vivo Desportes</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="../css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      <link href="../css/videos.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+      <style>
+        .vidwidth{
+          width: 100%;
+        }
+        th{
+          font-style: bold;
+          font-family: monospace;
+          font-size:1.45em;
+          text-align: center;
+        }
+        td{
+          text-align: center;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="nameheader"></div>
+    <div id="main">
+      <br>
+
+
+      <div style="text-align:center ">
+        <iframe width="800" height="450" src= <%= data[0].vidLink %> frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <style type="text/css">
+        .center{
+          text-align:center;
+          margin-top:25px;
+          font-family: 'Helvetica';
+          font-size: 20px;
+        }
+      </style>
+
+      <p>
+        <div>
+          <h3 class="center"> Player Videos </h3>
+        </div>
+      </p>
+      <div>
+        <p class="center container" style="text-align:center; margin-top:10px; margin-bottom:20px">Some of the best videos that our players have performed during their skill testing session</p>
+      </div>
+      <br>
+      <div class="vidclass" style=" flex-direction: row; display: flex;">
+        <% for (var i=1; i<data.length; i++) { %>
+          <div style="text-align:center; margin-left:50px ">
+            <iframe width="215" height="290" src= <%= data[i].vidLink %> frameborder="0" allowfullscreen></iframe>
+          </div>
+        <% } %>
+      </div>
+      <ul class="pagination center"><div id="other-videos"></div></ul>
+      <div id="footer"></div>
+
+      <script>
+      $(document).ready(function () {
+        $("#nameheader").load("/html/header_withoutsearch.html");
+        $("#footer").load("/html/footer.html");
+      });
+      </script>
+      <script type="text/javascript" src="/js/jquery-2.2.2.js"></script>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+      <script type="text/javascript" src="/js/skills.js"></script>
+    </div>
+  </body>
+</html>

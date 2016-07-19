@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+</head>
+
+<body>
+  <% if(id == 1) { %>
+    <% if(data === null) { %>
+      <form method='POST' action="/aboutUs/edited?id=1">
+        <textarea name="textArea" rows="10" cols="80"></textarea>
+        <br>
+        <button id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+      </form>
+    <% } else { %>
+      <form method='POST' action="/aboutUs/edited?id=1">
+        <textarea name="textArea" rows="10" cols="80"><%= data.content %></textarea>
+        <br>
+        <button id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+      </form>
+    <% } %>
+  <% } else if(id == 2) { %>
+    <% if(data === null) { %>
+      <form method='POST' action="/aboutUs/edited?id=2">
+        <textarea name="textArea" rows="10" cols="80"></textarea>
+        <br>
+        <button id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+      </form>
+    <% } else { %>
+      <form method='POST' action="/aboutUs/edited?id=2">
+        <textarea name="textArea" rows="10" cols="80"><%= data.content %></textarea>
+        <br>
+        <button id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+      </form>
+    <% } %>
+  <% } else if(id == 3) { %>
+    <% if(data === null) { %>
+      <form method='POST' action="/aboutUs/edited?id=3">
+        <textarea name="textArea" rows="10" cols="80"></textarea>
+        <br>
+        <button id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+      </form>
+    <% } else { %>
+      <form method='POST' action="/aboutUs/edited?id=3">
+        <textarea name="textArea" rows="10" cols="80"><%= data.content %></textarea>
+        <br>
+        <button id="submitButton1" type="submit" class="btn btn-success" type="submit">SUBMIT</button>
+      </form>
+    <% } %>
+  <% } %>
+
+  <script src="/ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('textArea');
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>Admin:Tournaments:Edit</title>
+  <link rel="stylesheet" type="text/css" href="/admin/semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="/admin/semantic/dist/semantic.min.js"></script>
+
+</head>
+<body>
+
+  <div class="ui left inverted  vertical menu sidebar visible">
+  <a class="item" href="http://www,vivodesportes.com"> Vivo Desportes</a>
+  <a class="item active" href="/../admin/admin.html"> Statistics</a>
+  <a class="item" href="/../admin/player.html"> Players </a>
+  <a class="item" href="/../admin/blog_admin.html"> Blog </a>
+  <a class="item" href="/../admin/aboutus_admin.html"> About Us</a>
+  <a class="item" href="#">Videos</a>
+  <a class="item" href="/../admin/tourn.html"><i class="soccer icon"></i> Tournaments </a>
+  </div>
+<div class="pusher">
+  <div class="pusher">
+    <div class="ui icon message">
+      <i class="soccer icon"></i>
+      <div class="content">
+        <div class="header"><h3>Edit Tournaments</h3></div>
+      </div>
+    </div>
+
+  <form class="ui form" style="padding:30px;width:500px;" action="/api/admin/tourn_edit" method="POST" enctype="multipart/form-data">
+  	<div>
+      <div class="ui horizontal label">Name</div><input type="text" placeholder="Name" value = '<%=tournament.name%>' name="name">
+    </div>
+  	<div class="field">
+  		<label class="ui teal tag label">Description</label>
+  		<textarea rows="2" name="description" ><%= tournament.description%></textarea>
+  	</div>
+  	<div>
+      <div class="ui horizontal label">Location</div><input type="text" placeholder="location" name="location"
+      value = '<%=tournament.location%>'>
+    </div>
+  	<div>
+      <div class="ui horizontal label">Type</div><input type="text" placeholder="format" name="type" value = '<%=tournament.type%>'>
+    </div>
+    <div>
+      <div class="ui horizontal label">Status</div><input type="text" placeholder="status" name="status"
+      value = '<%=tournament.status%>'>
+    </div>
+    <div class="field">
+      <label class="ui teal tag label">Feature</label>
+      <textarea rows="2" name="feature"><%=tournament.feature%></textarea>
+    </div>
+    <div class="field">
+      <label class="ui red tag label">Rules</label>
+      <textarea rows="2" name="rules" ><%=tournament.rules%></textarea>
+    </div>
+    <div>
+      <div class="ui black tag label">Fiture image link</div><input type="file" name="fix" value = '<%=tournament.fix%>'>
+        <span>
+        <img class="ui medium spaced image" image" src="../../<%-tournament.fix%>">
+        </span>
+    </div>
+    <div>
+      <div class="ui black tag label">Banner image link</div><input type="file" name="banner" value = '<%=tournament.banner%>'>
+      <img class="ui medium image" src="../../<%=tournament.banner%>">
+    </div>
+  	<div>
+      <div class="ui horizontal label">Tournament Date</div><input type="date" placeholder="Tournament date" name="date" value='<%=tournament.formattedDate%>'>
+    </div>
+  	<div>
+      <div class="ui horizontal label">Last Registration Date</div><input type="date" placeholder="Last Reg date" name="closedate" value='<%=tournament.closeformattedDate%>'>
+    </div>
+  	<div>
+      <input type='hidden' value ='<%= tournament._id%>'  name = 'id'>
+      <input type="submit" class="ui green button" value="Update">
+    </div>
+
+  </form>
+
+</div>
+</body>
+</html>

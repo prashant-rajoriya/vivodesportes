@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Page</title>
+</head>
+<body>
+	<form class="col s12" action = '/api/tournaments/details' type = 'post'>
+                                  <div class="row">
+                                    <div class="input-field col s6">
+                                      <input placeholder="First Name" id="first_name" type="text" class="validate" name="f_name">
+                                      <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                      <input id="last_name" type="text" class="validate" name="l_name">
+                                      <label for="last_name">Last Name</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="input-field col s6" name='phone'>
+                                      <input placeholder="Phone" id="disabled" type="text" class="validate">
+                                      <label for="phone">Phone</label>
+                                    </div>
+                                  </div>
+                                 
+                                  <div class="row">
+                                    <div class="input-field col s12" name='email'>
+                                      <input id="email" type="email" class="validate">
+                                      <label for="email">Email</label>
+                                    </div>
+                                  </div>
+                                  <input type = 'submit'>
+                                  </form>
+
+</body>
+</html>

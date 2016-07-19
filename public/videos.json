@@ -1,0 +1,122 @@
+{
+	"Elastico": [
+			{ "name": "Elastico", "link": "https://www.youtube.com/embed/xKOFhEKMwVo" , "image": "https://i.ytimg.com/vi_webp/wNEWJ04Ktp0/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"3602": [
+			{ "name": "360 Zidane Roulette", "link": "https://www.youtube.com/watch?v=EV7aYJXmImU" , "image": "https://i.ytimg.com/vi_webp/EV7aYJXmImU/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Slide": [
+			{ "name": " Sliding Tackle - Maldini and Nesta", "link": "https://www.youtube.com/watch?v=vRQm8wBBED8" , "image": "https://i.ytimg.com/vi_webp/vRQm8wBBED8/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Nutmeg": [
+			{ "name": "The Nutmeg - Luiz Suarez", "link": "https://www.youtube.com/watch?v=1zRFPWRKlOE" , "image": "https://i.ytimg.com/vi_webp/1zRFPWRKlOE/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Fake": [
+			{ "name": "Fake Shot - Thierry Henry", "link": "https://www.youtube.com/watch?v=50uj8WmuPnQ" , "image": "https://i.ytimg.com/vi_webp/50uj8WmuPnQ/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Dive": [
+			{ "name": " Diving Header", "link": "https://www.youtube.com/watch?v=CquuA9-dbyU" , "image": "https://i.ytimg.com/vi_webp/CquuA9-dbyU/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Body": [
+			{ "name": "Body Feint - Messi", "link": "https://www.youtube.com/watch?v=6Up50hqkuos" , "image": "https://i.ytimg.com/vi_webp/6Up50hqkuos/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Back": [
+			{ "name": "Back Heel", "link": "https://www.youtube.com/watch?v=rwu1tyfT3qI" , "image": "https://i.ytimg.com/vi_webp/rwu1tyfT3qI/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Scorpion": [
+			{ "name": " Scorpion Kick", "link": "https://www.youtube.com/watch?v=NhtJszofF8Y" , "image": "https://i.ytimg.com/vi_webp/NhtJszofF8Y/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Volley": [
+			{ "name": "Volley / Scissors Kick", "link": "https://www.youtube.com/watch?v=Z4Q5UoplsYU" , "image": "https://i.ytimg.com/vi_webp/Z4Q5UoplsYU/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Ronaldo": [
+			{ "name": "Ronaldo Chop", "link": "https://www.youtube.com/watch?v=FXQSJq2himw" , "image": "https://i.ytimg.com/vi_webp/FXQSJq2himw/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"noLook": [
+			{ "name": "No Look Pass - Cristiano Ronaldo", "link": "https://www.youtube.com/watch?v=wNEWJ04Ktp0" , "image": "https://i.ytimg.com/vi_webp/wNEWJ04Ktp0/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Bicycle": [
+			{ "name": "Bicycle Kick - Wayne Roonery", "link": "https://www.youtube.com/watch?v=0RIhTwWjzCk" , "image": "https://i.ytimg.com/vi_webp/0RIhTwWjzCk/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"rainBow": [
+			{ "name": "Rainbow", "link": "https://www.youtube.com/watch?v=pATYx0Bw1Ac" , "image": "https://i.ytimg.com/vi_webp/pATYx0Bw1Ac/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	],
+	"Beckham": [
+			{ "name": "Beckham Freekicks", "link": "https://www.youtube.com/watch?v=VLZGQnEZxXc" , "image": "https://i.ytimg.com/vi_webp/VLZGQnEZxXc/mqdefault.webp" },
+		    { "name": "Sahil", "link": "https://www.youtube.com/watch?v=-NSvbGxzpKk" , "image": "https://i.ytimg.com/vi_webp/-NSvbGxzpKk/mqdefault.webp" },
+		    { "name": "Parth", "link": "https://www.youtube.com/watch?v=KtJHeN3-p-E" , "image": "https://i.ytimg.com/vi_webp/KtJHeN3-p-E/mqdefault.webp" },
+		    { "name": "Shaunak", "link": "https://www.youtube.com/watch?v=MUQemh-i62M" , "image": "https://i.ytimg.com/vi_webp/MUQemh-i62M/mqdefault.webp" },
+		    { "name": "Abhishek", "link": "https://www.youtube.com/watch?v=IWNG8VJEsIE" , "image": "https://i.ytimg.com/vi_webp/IWNG8VJEsIE/mqdefault.webp" },
+		    { "name": "Shivam", "link": "https://www.youtube.com/watch?v=3jHXCmn8VNI" , "image": "https://i.ytimg.com/vi_webp/3jHXCmn8VNI/mqdefault.webp" }
+	]
+}
